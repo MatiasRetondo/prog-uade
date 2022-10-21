@@ -6,8 +6,8 @@
 # generar promedio de las alturas de los jugadores por deporte
 
 # mostrar por pantalla los deportes con altura promedio mayon a la altura promedio de todos los deportes
-path = "archivos\ejercicio1.txt"
-path2 = "archivos\ejercicio1Promedio.txt"
+path = "archivos\ejercicio1\ejercicio1.txt"
+path2 = "archivos\ejercicio1\ejercicio1Promedio.txt"
 
 def cargaDeportesYAlturas():
     arch = open(path, "wt")
