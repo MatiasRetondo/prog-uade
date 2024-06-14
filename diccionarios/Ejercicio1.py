@@ -1,5 +1,6 @@
-# realizar un programa para ingresar una frase y mostrar un listado ordenado alfabeticamente con las palabras que contiene, 
+# realizar un programa para ingresar una frase y mostrar un listado ordenado alfabeticamente con las palabras que contiene,
 # eliminando las repetidas y añadiendo la cantidad de veces que aparece cada una.
+
 
 def ordenarPalabras():
     frase = input("Ingrese una frase: ")

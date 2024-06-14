@@ -1,5 +1,5 @@
-# datos que tenemos primer paralelismo: categoria, importe y valores 
-# datos que tenemos segundo paralelismo: num_registro, categoria y año 
+# datos que tenemos primer paralelismo: categoria, importe y valores
+# datos que tenemos segundo paralelismo: num_registro, categoria y año
 
 def ingresa_valida(min, max, msg):
     data = input(msg)
@@ -33,8 +33,6 @@ def cargar_registros(num_registros, categorias_autos, años_autos):
         categorias_autos.append(leecategoria())
         años_autos.append(ingresa_valida(1975, 1990, "ingrese año"))
 
-
-
 #creamos funcion main para que se ejecute el programa
 def main():
     categorias = ["A", "B", "C", "D", "E"]
@@ -46,6 +44,3 @@ def main():
     categorias_autos = []
 
     cargar_registros(num_registros, categorias_autos, años_autos)
-
-    
-    

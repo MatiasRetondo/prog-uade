@@ -1,10 +1,8 @@
-
 def validaAlumnos(matriz, alumnos, curso, comision):
     if matriz[curso][comision] + alumnos <= 30:
         return True
     else:
         return False
-
 
 def cargaComisiones(matriz, cursos):
     alumnos = 0
@@ -19,7 +17,7 @@ def cargaComisiones(matriz, cursos):
                 matriz[posCurso][comision-1] += alumnos
             else:
                 print("No hay cupo en la comision", comision, "del curso", curso)
-            
+
 
 
 def ingresa_valida(min, max, msg):
@@ -57,11 +55,11 @@ def cursosMasCargados(matriz, cursos):
             valores.append(valor)
             pos.append(matriz[f].index(valor))
             print("El curso", cursos[f], "tiene la comision", matriz[f].index(valor) + 1, "con", valor, "alumnos")
-    print("El curso con mas alumnos es el", cursos[valores.index(max(valores))], "con", max(valores), "alumnos en la comision", pos[valores.index(max(valores))]) 
+    print("El curso con mas alumnos es el", cursos[valores.index(max(valores))], "con", max(valores), "alumnos en la comision", pos[valores.index(max(valores))])
     print("")
 
 
-def cursosPocosAlumnos(matriz, cursos): 
+def cursosPocosAlumnos(matriz, cursos):
     for f in range(len(matriz)):
         pos = []
         for c in range(len(matriz[f])):
@@ -69,10 +67,10 @@ def cursosPocosAlumnos(matriz, cursos):
                 pos.append(c)
         print("El curso", cursos[f], "tiene las comisiones", pos, "con menos de 10 alumnos")
     print("")
-    
-        
-            
-    
+
+
+
+
 
 def __main__():  # definimos la funcion main
     cursos = [0] * 10
@@ -96,8 +94,6 @@ def __main__():  # definimos la funcion main
     print("-----------------------------")
     #muestra las comisiones con menos de 10 alumnos de cada curso
     cursosPocosAlumnos(matriz, cursos)
-
-
 
 
 if __name__ == "__main__":  # al hacer esto, le decimos que se ejecute automaticamente la funcion main al principio de ejecucion

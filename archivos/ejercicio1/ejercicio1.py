@@ -72,7 +72,6 @@ def mostrarAlturasMayores():
             print(deportes[i], alturas[i])
 
 
-
 def __main__():
     promedioAlturas()
     mostrarAlturasMayores()

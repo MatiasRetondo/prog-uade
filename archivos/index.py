@@ -1,6 +1,5 @@
 # El campo ; separa los campos dentro del registro
 # El campo \n separa los registros dentro del archivo
-
 #Vamos a manejar archivos de TEXTO
 
 try:

@@ -30,7 +30,7 @@ def acumular20p():
             line[3] = str(float(line[3]) * 1.2) + "\n"
             arch2.write(";".join(line))
         arch.close()
-        arch2.close() 
+        arch2.close()
     except ValueError:
         print("El numero ingresado no es valido")
     except OSError:
@@ -74,8 +74,6 @@ def __main__():
     generaPrecios()
     acumular20p()
     nuevosPrecios()
-
-
 
 if __name__ == "__main__":
     __main__()

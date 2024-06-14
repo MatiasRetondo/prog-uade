@@ -1,9 +1,8 @@
 #en la parte de los porcentajes (30% teoria y 40% prativa) se calcula asi:
 # si las notas son: 7/7/8 (siendo 7 la nota de teoria y 8 la de practica) entonces:
-# 7*0.3 + 7*0.3 + 8*0.4 = 7.4 
+# 7*0.3 + 7*0.3 + 8*0.4 = 7.4
 import random
 path = "TP2\\alumnos.txt"
-
 
 def validaRecuperatorio(alumno):
     avaible = False
@@ -18,7 +17,7 @@ def validaRecuperatorio(alumno):
         avaible = True
     return avaible
 
-    
+
 
 def generarArchivo():
     alumno = {}
@@ -41,7 +40,6 @@ def generarArchivo():
         print("Error al escribir el archivo")
     except:
         print("Error inesperado")
-
 
 
 #lee el archivo y ordena la lista por apellido
@@ -82,7 +80,7 @@ def notaFinal(alumnos):
             print("Error inesperado")
     return alumnos
 
-#devuelve una lista con los alumnos aprobados y otra con los alumnos que deben recuperar 
+#devuelve una lista con los alumnos aprobados y otra con los alumnos que deben recuperar
 def aprobadosRecuperar(alumnos):
     aprobados = []
     recuperar = []
@@ -115,5 +113,5 @@ def __main__():
         print(alumno)
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     __main__()

@@ -66,7 +66,7 @@ def cargaUser(matriz):
             for i in range(len(values)):
                 matriz.append(values[i])
 
-            
+
 def muestraMatriz(matriz):
     for f in range(len(matriz)):
         for c in range(len(matriz[f])):
@@ -97,7 +97,7 @@ def calculoMedicina(matriz, arraySueldo):
     print("El total a pagar de medicina es de: " + str(sum(medicina)))
     print("El promedio a pagar de medicina es de: " + str(calculaPromedioArray(medicina)))
 
-    
+
 def orderAndSlice(matriz):
     arraySueldo = []
     arrayAntiguedad = []
@@ -120,8 +120,8 @@ def orderAndSlice(matriz):
         print("array", arrayAntiguedad)
         print("Los sueldos con mayor antiguedad son ", arraySueldo[:mitad])
         print("Los sueldos con menor antiguedad son ", arraySueldo[mitad:])
-        
-                
+
+
 
 def __main__():  # definimos la funcion main
 
@@ -143,7 +143,7 @@ def __main__():  # definimos la funcion main
 
     #Punto 5 - Ordenar y mostrar los sueldos de los empleados con mayor y menor antiguedad
     orderAndSlice(matriz)
-    
+
 
 
 #Esta mal la ejecucion del create, deberia haber sido un un for para las columnas con i en range(5), eso hubiera cargado bien la matriz
@@ -151,6 +151,5 @@ def __main__():  # definimos la funcion main
 #tecnicamente no es una matriz, es una lista de listas, pero no es una matriz
 
 
-
-if __name__ == "__main__": 
+if __name__ == "__main__":
     __main__()

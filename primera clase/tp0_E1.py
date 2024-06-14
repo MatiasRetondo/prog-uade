@@ -64,7 +64,7 @@ def cargaUser(matriz):
             values.append(hijos)
             matriz.append(values)
 
-            
+
 def muestraMatriz(matriz):
     for f in range(len(matriz)):
         for c in range(len(matriz[f])):
@@ -75,7 +75,6 @@ def muestraMatrizParalela(matriz, arraySueldo):
     for f in range(len(matriz)):
         for c in range(len(matriz[f])):
             print("Legajo: " + str(matriz[f][0]) + " Sueldo: " + str(matriz[f][1]) + " Base Imponible: " + str(arraySueldo[f]))
-
 
 def calculaPromedioArray(array):
     promedio = 0
@@ -96,7 +95,6 @@ def calculoMedicina(matriz, arraySueldo):
     print("El total a pagar de medicina es de: " + str(sum(medicina)))
     print("El promedio a pagar de medicina es de: " + str(calculaPromedioArray(medicina)))
 
-    
 def orderAndSlice(matriz):
     arraySueldo = []
     arrayAntiguedad = []
@@ -116,8 +114,6 @@ def orderAndSlice(matriz):
         mitad = int(len(arraySueldo) / 2)
         print("Los sueldos con mayor antiguedad son ", arraySueldo[:mitad])
         print("Los sueldos con menor antiguedad son ", arraySueldo[mitad:])
-        
-                
 
 def __main__():  # definimos la funcion main
 
@@ -132,11 +128,6 @@ def __main__():  # definimos la funcion main
 
     #Puntos 3 y 4 - Calculo medicina prepaga y promedio de gasto medicina
     calculoMedicina(matriz, arraySueldo)
-    
 
-
-
-
-
-if __name__ == "__main__": 
+if __name__ == "__main__":
     __main__()
